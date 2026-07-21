@@ -1,5 +1,27 @@
+/*basic style*/
 body {
-  background-color: blue;
+  font-family: "Roboto", sans-serif;
+  background-color: #F8F9FF;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1180px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.img-normalize {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
