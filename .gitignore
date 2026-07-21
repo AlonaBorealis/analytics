@@ -1,0 +1,10 @@
+node_modules/
+
+# compiled from scss (built via `npm run build`)
+css/*.css
+css/*.css.map
+scss/*.css
+scss/*.css.map
+
+# IDE
+.idea/
