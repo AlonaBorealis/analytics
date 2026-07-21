@@ -1,5 +1,8 @@
 node_modules/
 
-# compiled from scss (built via `npm run build`)
+# stray output from IDE scss compilation (built css lives in css/, see below)
+scss/*.css
+scss/*.css.map
+
 # IDE
 .idea/
