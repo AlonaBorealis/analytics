@@ -1,0 +1,39 @@
+.intro-analytics {
+	background-color: $background-dark-blue;
+	padding-top: 50px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-right: 80px;
+		text-decoration: none;
+	}
+}
+
+.header__menu {
+	flex-grow: 1;
+
+	&-list {
+		display: flex;
+		gap: 36px;
+	}
+
+	&-li {
+		a {
+			text-decoration: none;
+			color: $gray;
+		}
+
+	}
+}
+
+.header__btns {
+	display: flex;
+	align-items: center;
+}
