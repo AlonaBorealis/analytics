@@ -22,6 +22,7 @@ a {
 }
 
 .button {
+	max-width: 238px;
 	background-color: $pink;
 	padding: 15px 80px;
 	border-radius: 68px;
@@ -43,6 +44,7 @@ a {
 }
 
 .button--transparent {
+
 	background-color: transparent;
 	border: 1px solid #2A407C;
 	&:hover {
