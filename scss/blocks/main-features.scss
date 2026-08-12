@@ -1,0 +1,43 @@
+.main-features {
+	margin-bottom: 130px;
+	/*верхняя часть с заголовком и описанием*/
+	&__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 80px;
+		gap: 30px;
+	}
+	&__title {
+		color: $background-dark-blue;
+		font-weight: bold;
+		font-size: 40px;
+	}
+	&__paragraph {
+		color: $grey;
+		text-align: center;
+		line-height: 150%;
+		font-size: 17px;
+	}
+	/*нижняя часть с заголовком и описанием*/
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	&__li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		gap: 15px;
+	}
+	&__h3 {
+		font-weight: bold;
+	}
+	&__icon {
+		margin-bottom: 5px;
+	}
+}
