@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./css/style.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,31 +15,43 @@
 		<!--main-->
 		<section class="intro-analytics">
 			<!--header-->
-			<div class="wrap">
-				<header class="header">
-					<a href="#" class="header__logo">
-						<img src="./assets/icons/Subtract.png" alt="">
-						<img src="./assets/img/ANALYTICS.png" alt="">
-					</a>
-					<nav class="header__menu">
-						<ul class="header__menu-list">
-							<li class="header__menu-li"><a href="#">Products</a></li>
-							<li class="header__menu-li"><a href="#">Pricing</a></li>
-							<li class="header__menu-li"><a href="#">FAQ</a></li>
-							<li class="header__menu-li"><a href="#">Blog</a></li>
-							<li class="header__menu-li"><a href="#">Analytics</a></li>
-						</ul>
-					</nav>
-					<div class="header__btns">
-						<button class="header__btns-btn button button--trans-no-border">
-							Sign In
-						</button>
-						<button class="header__btns-btn button button--transparent">
-							Sign Up
-						</button>
-					</div>
-				</header>
-			</div>
+			<header class="header wrap">
+				<a href="#" class="header__logo">
+					<img src="./assets/icons/Subtract.png" width="40" height="40" alt="">
+					<img src="./assets/img/ANALYTICS.png" width="118" height="17" alt="">
+				</a>
+				<nav class="header__menu hidden">
+					<ul class="header__menu-list">
+						<li class="header__menu-li"><a href="#">Products</a></li>
+						<li class="header__menu-li"><a href="#">Pricing</a></li>
+						<li class="header__menu-li"><a href="#">FAQ</a></li>
+						<li class="header__menu-li"><a href="#">Blog</a></li>
+						<li class="header__menu-li"><a href="#">Analytics</a></li>
+					</ul>
+				</nav>
+				<div class="header__btns">
+					<button
+						class="header__btns-btn button button--trans-no-border button--mobile">
+						Sign In
+					</button>
+					<button
+						class="header__btns-btn button button--transparent hidden">
+						Sign Up
+					</button>
+				</div>
+				<button class="header__burger-menu button button--transparent button--mobile"
+				        aria-label="Toggle navigation">
+					<img src="assets/icons/menu-icon.svg" alt="">
+				</button>
+				<!--<ul class="header__menu-list">
+					<li class="header__menu-li"><a href="#">Products</a></li>
+					<li class="header__menu-li"><a href="#">Pricing</a></li>
+					<li class="header__menu-li"><a href="#">FAQ</a></li>
+					<li class="header__menu-li"><a href="#">Blog</a></li>
+					<li class="header__menu-li"><a href="#">Analytics</a></li>
+				</ul>-->
+
+			</header>
 			<!--dashboard-->
 			<div class="dashboard wrap">
 				<div class="dashboard__info">
@@ -51,7 +64,8 @@
 					<button class="dashboard__btn button">Try for free</button>
 				</div>
 				<div class="dashboard__pictures">
-					<img class="dashboard__small-img" src="./assets/img/dashboard-small.png"
+					<img class="dashboard__big-img" src="./assets/img/dashboard-big.png"
+					     width="804" height="555"
 					     alt="dashboard">
 				</div>
 			</div>
@@ -68,7 +82,8 @@
 				</div>
 				<div class="main-features__list">
 					<div class="main-features__li">
-						<img src="./assets/icons/monitoring.svg" alt="monitoring"
+						<img src="./assets/icons/monitoring.svg" width="61" height="60"
+						     alt="monitoring"
 						     class="main-features__icon">
 						<h3 class="main-features__h3">Monitoring 24/7</h3>
 						<p class="main-features__paragraph">
@@ -77,7 +92,7 @@
 						</p>
 					</div>
 					<div class="main-features__li">
-						<img src="./assets/icons/widgets.svg" alt="widgets"
+						<img src="./assets/icons/widgets.svg" width="61" height="60" alt="widgets"
 						     class="main-features__icon">
 						<h3 class="main-features__h3">Widget System</h3>
 						<p class="main-features__paragraph">
@@ -86,7 +101,8 @@
 						</p>
 					</div>
 					<div class="main-features__li">
-						<img src="./assets/icons/performance.svg" alt="performance"
+						<img src="./assets/icons/performance.svg" width="61" height="60"
+						     alt="performance"
 						     class="main-features__icon">
 						<h3 class="main-features__h3">Best Perfomance</h3>
 						<p class="main-features__paragraph">
@@ -109,10 +125,12 @@
 						amet.
 					</p>
 				</div>
-				<img src="assets/img/screen-01.png" alt="" class="roadmap__img">
+				<img src="assets/img/screen-01.png" width="601" height="410" alt=""
+				     class="roadmap__img">
 			</div>
 			<div class="roadmap wrap">
-				<img src="assets/img/screen-02.png" alt="" class="roadmap__img">
+				<img src="assets/img/screen-02.png" width="601" height="410" alt=""
+				     class="roadmap__img">
 				<div class="roadmap__text">
 					<h2 class="roadmap__h2">
 						Fully customizable to <br> address your needs
@@ -137,13 +155,14 @@
 						amet.
 					</p>
 				</div>
-				<img src="assets/img/screen-03.png" alt="" class="roadmap__img">
+				<img src="assets/img/screen-03.png" width="601" height="410" alt=""
+				     class="roadmap__img">
 			</div>
 		</section>
 		<!--footer-->
 		<section class="foot">
 			<!--pricing-->
-			<div class="pricing wrap">
+			<!--<div class="pricing wrap">
 				<div class="pricing__text">
 					<h3 class="pricing__h3">Pricing Plans</h3>
 					<p class="pricing__paragraph">
@@ -162,7 +181,7 @@
 							<h2 class="pricing__card-h2">$29</h2>
 							<p class="pricing__card-paragraph">per month</p>
 						</div>
-						<button class="pricing__btn button button--transparent">Order</button>
+						<button class="pricing__btn button button&#45;&#45;transparent">Order</button>
 					</div>
 					<div class="pricing__card">
 						<div class="pricing__card-text">
@@ -173,7 +192,7 @@
 							<h2 class="pricing__card-h2">$99</h2>
 							<p class="pricing__card-paragraph">per month</p>
 						</div>
-						<button class="pricing__btn button button--transparent">Order</button>
+						<button class="pricing__btn button button&#45;&#45;transparent">Order</button>
 					</div>
 					<div class="pricing__card">
 						<div class="pricing__card-text">
@@ -184,14 +203,14 @@
 							<h2 class="pricing__card-h2">$299</h2>
 							<p class="pricing__card-paragraph">per month</p>
 						</div>
-						<button class="pricing__btn button button--transparent">Order</button>
+						<button class="pricing__btn button button&#45;&#45;transparent">Order</button>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			<div class="footer wrap">
 				<a class="footer__logo" href="#">
-					<img src="./assets/icons/logo-gray.svg" alt="">
-					<img src="./assets/img/ANALYTICS-grey.png" alt="">
+					<img src="./assets/icons/logo-gray.svg" width="30" height="30" alt="">
+					<img src="./assets/img/ANALYTICS-grey.png" width="89" height="13" alt="">
 				</a>
 				<div class="footer__nav">
 					<a class="footer__nav-link" href="#">Product</a>
@@ -201,14 +220,14 @@
 				</div>
 				<div class="footer__socials">
 					<a class="footer__socials-img"
-					   href="#"><img src="assets/icons/Facebook.svg" alt=""></a>
+					   href="#"><img src="assets/icons/Facebook.svg" width="10" height="20" alt=""></a>
 					<a class="footer__socials-img"
-					   href="#"><img src="assets/icons/Twitter.svg" alt=""></a>
+					   href="#"><img src="assets/icons/Twitter.svg" width="25" height="20"
+					                 alt=""></a>
 					<a class="footer__socials-img"
-					   href="#"><img src="assets/icons/Instagram.svg" alt=""></a>
+					   href="#"><img src="assets/icons/Instagram.svg" width="21" height="20" alt=""></a>
 				</div>
 			</div>
 		</section>
-		<script src="index.js"></script>
 	</body>
 </html>

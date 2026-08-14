@@ -1,11 +1,15 @@
 .intro-analytics {
-	padding-top: 50px;
 	overflow-x: hidden;
 	position: relative;
 
+
+
 	&::after {
 		background-color: $background-dark-blue;
-		background-image: url("../../assets/icons/logo-light-gray-2.svg");
+		background-image: url("../assets/icons/logo-light-gray-2.svg");
+		@include mobile {
+			background-image: none;
+		}
 		background-repeat: no-repeat;
 		background-position: calc(50% + 480px) calc(50% + 300px);
 		background-size: 1438px 1438px;
@@ -16,6 +20,7 @@
 		position: absolute;
 		z-index: -1;
 		clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
 	}
 
 	&::before {
@@ -31,8 +36,14 @@
 }
 
 .header {
+	margin-top: 50px;
 	display: flex;
 	align-items: center;
+	@include mobile {
+		box-shadow: 0 4px 4px 0 #12214d;
+		height: 70px;
+		margin: 0;
+	}
 
 
 	&__logo {
@@ -44,16 +55,29 @@
 		z-index: 1;
 		position: relative;
 
+		@include mobile {
+			width: 89px ;
+			height: 13px;
+			flex-grow: 1;
+		}
+
 		&::before {
 			cursor: auto;
 			position: absolute;
 			content: "";
-			background: url("../../assets/icons/logo-light-gray-2.svg") no-repeat;
+			background: url("../assets/icons/logo-light-gray-2.svg") no-repeat;
 			width: 660px;
 			height: 660px;
 			z-index: -1;
 			right: -180px;
+			@include mobile {
+				display: none;
+			}
 		}
+	}
+	&__burger-menu {
+		padding: 0;
+		margin-left: 13px;
 	}
 }
 
@@ -73,6 +97,7 @@
 		}
 
 	}
+
 }
 
 .header__btns {

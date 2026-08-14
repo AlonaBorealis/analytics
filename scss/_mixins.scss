@@ -10,3 +10,9 @@
 	max-width: 100%;
 	height: auto;
 }
+
+@mixin mobile {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
